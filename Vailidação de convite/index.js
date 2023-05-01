@@ -13,6 +13,7 @@ function clicar() {
     let input1up = input1.value.toUpperCase();
     let input2up = input2.value.toUpperCase();
   
+    resultado.innerText = "";
     spinner.style.display = 'block'; // exibe o spinner
   
     setTimeout(function() {
@@ -30,4 +31,3 @@ function clicar() {
     
     }, 1000); // tempo em milissegundos que o spinner será exibido (3 segundos no exemplo)
   }
-  
