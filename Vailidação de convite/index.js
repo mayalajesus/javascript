@@ -23,7 +23,7 @@ function clicar() {
       if (names.indexOf(input1up) !== -1 && hosts.indexOf(input2up) !== -1) {
         resultado.innerText = ("Acesso liberado para " + input1.value);
       } else {
-        resultado.innerText = ("Não encontramos registros de " + input1.value);
+        resultado.innerText = ("Não há registros de " + input1.value);
       }
 
       isInput1Selected = true;
