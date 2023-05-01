@@ -9,6 +9,9 @@ btn.addEventListener('click', clicar);
 let names = ['RAFAEL', 'RICARDO'];
 let hosts = ['LUCAS', 'CAIO'];
 
+let isInput1Selected = false;
+let isInput2Selected = false;
+
 function clicar() {
     let input1up = input1.value.toUpperCase();
     let input2up = input2.value.toUpperCase();
@@ -22,6 +25,9 @@ function clicar() {
       } else {
         resultado.innerText = ("Não encontramos registros de " + input1.value);
       }
+
+      isInput1Selected = true;
+      isInput2Selected = true;
   
       spinner.style.display = 'none'; // remove o spinner
       
@@ -30,4 +36,11 @@ function clicar() {
       input2.value = "";
     
     }, 1000); // tempo em milissegundos que o spinner será exibido (3 segundos no exemplo)
+
+    if(isInput1Selected === false && isInput2Selected === false){
+      alert('Preencha todas as informações')
+      resultado.innerText = "";
+      return;
+    }
+
   }
