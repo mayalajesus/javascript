@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Secure Ticket</title>
+</head>
+<body>
+
+    <div class="frame">
+        <P>Descubra agora se seu nome está na lista de convidados e desfrute do seu evento com tranquilidade e segurança.</P>
+
+        <div class="screen">
+            <p>Certifique-se sempre se está verificando o evento correto, para evitar confusões indesejadas.</p>
+            <p> Para que a verificação seja eficiente é necessário que preencha todos os dados requisistados.</p>
+            <p>O nosso padrão de segurança é rigoroso para garantir a segurança de todos os envolvidos no evento.</p>
+        </div>
+    </div>
+    
+
+    <div class="conteiner">
+        
+        <main>
+            <h1>Evento #00254</h1>
+            <h2>Validação de convite</h2>
+
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="nomeConvidado">Convidado por:</label>
+            <input type="text" id="nomeConvidado" required>
+
+            <button id="verificar">Verificar</button>
+
+            <div id="status">
+                <h3>Status:</h3>
+
+                <div class="spinner"></div>
+
+                <div id="resultado"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

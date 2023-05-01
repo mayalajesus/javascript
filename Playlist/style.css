@@ -1,0 +1,56 @@
+@charset "UFT-8";
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Unica+One&display=swap');
+
+
+body {
+    position: relative;
+    z-index: 1;
+}
+
+.logo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Unica One';
+    color: antiquewhite;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.playlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 450px;
+    height: 500px;
+
+    margin: 20px auto auto auto;
+    position: relative;
+    z-index: 1;
+}
+
+audio {
+    width: 80%;
+    height: 50px;
+
+    margin: 5px auto 5px auto;
+    
+    position: relative;
+    z-index: 1;
+
+}
